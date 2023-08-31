@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "residual-rl"
+version = "0.0.1"
+authors = [
+  { name="Steven Tang", email="stang5@ualberta.ca" },
+]
+description = "Implementation of Residual Reinforcement Learning for Robot Control with Stable Baselines3."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "stable-baselines3[extra]>=2.0.0",
+    "torch>=1.8.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "gymnasium-robotics>=1.2.2"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/steventango/residual-rl"
+"Bug Tracker" = "https://github.com/steventango/residual-rl/issues"
